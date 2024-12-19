@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment2</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="assign2.js"></script>
+  </head>
+
+  <body onload="webGLStart();" style="margin: 50px;">
+    <!-- Put the canvas in the centre -->
+    <div>
+      <h1>Shading</h1>
+      <canvas
+        id="assign2"
+        style="border: none"
+        width="1260"
+        height="500"
+      ></canvas>
+    </div>
+
+    <div style="align-items: center; text-align: center;">
+      <h2 id="flat" style="float: left; width: 420px;">Per-Face Shading</h2> 
+      <h2 id="vertex" style="float: left; width: 420px;">Gouraud Shading (Per-Vertex)</h2> 
+      <h2 id="frag" style="float: left; width: 420px;">Phong Shading (Per-Fragment)</h2>
+    </div>
+
+    <br/><br/><br/><br/>
+
+    <div style="float: left;">
+      <b>Control Light Position :</b> 
+      <input type="range" class="slider" id="light-slider" min="-15.0" max="15.0" step="0.5" value="3.0" style="width: 300px; margin: 10px;">
+      <br/>
+      <b>Control Camera Zoom :</b> 
+      <input type="range" class="slider" id="camera-slider" min="1.0" max="10.0" step="0.5" value="2.0" style="width: 300px; margin: 10px;">
+    </div>
+  </body>
+</html>
